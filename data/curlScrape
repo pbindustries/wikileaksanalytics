@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+curl --request GET \
+  --url 'https://wikileaks.org/plusd/?qproject[]=ps&qproject[]=cc&qproject[]=fp&qproject[]=ee&qproject[]=cg&q=&qfconcept=AIR+DEFENSE&qsort=tdesc#result' \
+  --header 'accept: application/hal+json' >> ~/pbindustries/public/My-projects/wikileaks-dataset-generator/data/output.json
+echo " - wikileaks files saved - "
+
